@@ -229,15 +229,22 @@ nav {
 .panel {
     width: 400px;
     height: 400px;
-    background: var(--c-white);
+    background: transparent;
     border: var(--border-thick);
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     vertical-align: top;
     position: relative;
+    overflow: hidden;
+}
+
+.panel img {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .panel-caption {
