@@ -379,8 +379,36 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .comic-page {
+        padding: 20px;
+        gap: 30px;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    /* Hero Section */
     .hero-panel {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .hero-visual {
@@ -388,5 +416,96 @@ footer {
         order: -1;
         border-left: none;
         border-bottom: var(--border-thick);
+    }
+
+    .big-name {
+        font-size: 2.5rem;
+    }
+
+    .title-badge {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .speech-bubble {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    /* Story Strip */
+    .story-strip-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .panel {
+        width: 280px;
+        height: 280px;
+        min-width: 280px;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Section Headers */
+    .section-header {
+        font-size: 2rem;
+    }
+
+    /* Contact Section */
+    .contact-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-visual {
+        min-height: 150px;
+        order: -1;
+        border-right: none;
+        border-bottom: var(--border-thick);
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Buttons */
+    .btn-comic {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .comic-page {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .big-name {
+        font-size: 2rem;
+    }
+
+    .panel {
+        width: 240px;
+        height: 240px;
+        min-width: 240px;
+    }
+
+    .section-header {
+        font-size: 1.5rem;
+    }
+
+    .title-badge {
+        font-size: 0.9rem;
+        padding: 6px 12px;
     }
 }
